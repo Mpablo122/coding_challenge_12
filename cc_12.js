@@ -6,14 +6,13 @@ const revenueCard = document.createElement("div");
 
 revenueCard.setAttribute("class","metric-card");
 revenueCard.setAttribute("id", "revenueCard");
-profitCard.setAttribute("class","metric-card");
-profitCard.setAttribute("id", "profitCard" )
+
 // making metric card div
 revenueCard.innerHTML = "<h3>Revenue</h3><p>$0</p>"
-profitCard.innerHTML = "<h3>Profit</h3><p>$0</p>"
+
 // making sure the attributes are set for the class as well as for the id
 dashboard_1.appendChild(revenueCard);
-dashboard_1.appendChild(profitCard);
+
 
 // "Task 2 - Updated Metric Cards via Array Conversion"
 
