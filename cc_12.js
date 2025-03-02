@@ -16,7 +16,7 @@ dashboard_1.appendChild(revenueCard);
 const metricCards = document.querySelectorAll(".metric-card");
 //making sure to select all of the metric cards for the dashboard container 
 
-// the array will update fro each card here
+// the array will update for each card here
 Array.from(metricCards).forEach(card =>{
     card.innerHTML += " - Updated";
     card.style.backgroundColor = "lightgreen"
@@ -39,6 +39,7 @@ function addInventoryItem(productName) {
 
 // "Task 4 - Demonstrated Event Bubbling in Customer Section"
 const customerSection = document.getElementById("customerSection");
+// clicking event 
 
 function addCustomerCard(customerName) {
     const customerCard = document.createElement("div");
