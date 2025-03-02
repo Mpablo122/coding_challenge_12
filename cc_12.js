@@ -1,14 +1,14 @@
 //Task 1 Created Revenue Metric Card
 const dashboard_1 = document.getElementById("dashboard");
 const dashboard_2 = document.querySelector("#dashboard");
-
+// selecting the dashboard container using the getelementid and queryselector 
 const revenueCard = document.createElement("div");
 
 revenueCard.setAttribute("class","metric-card");
 revenueCard.setAttribute("id", "revenueCard");
-
+// making metric card div
 revenueCard.innerHTML = "<h3>Revenue</h3><p>$0</p>"
-
+// making sure the attributes are set for the class as well as for the id
 dashboard_1.appendChild(revenueCard);
 
 // "Task 2 - Updated Metric Cards via Array Conversion"
