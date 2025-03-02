@@ -14,7 +14,9 @@ dashboard_1.appendChild(revenueCard);
 // "Task 2 - Updated Metric Cards via Array Conversion"
 
 const metricCards = document.querySelectorAll(".metric-card");
+//making sure to select all of the metric cards for the dashboard container 
 
+// the array will update fro each card here
 Array.from(metricCards).forEach(card =>{
     card.innerHTML += " - Updated";
     card.style.backgroundColor = "lightgreen"
