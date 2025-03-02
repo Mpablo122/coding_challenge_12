@@ -34,3 +34,21 @@ function addInventoryItem(productName) {
     });
     inventoryList.appendChild(listItem);
 }
+
+// "Task 4 - Demonstrated Event Bubbling in Customer Section"
+const customerSection = document.getElementById("customerSection");
+
+function addCustomerCard(customerName) {
+    const customerCard = document.createElement("div");
+    customerCard.setAttribute("class", "customer-card");
+    customerCard.textContent = customerName;
+    customerCard.addEventListener("click", (event) => {
+        console.log("Customer card clicked");
+        event.stopPropagation(); // Prevents event from bubbling to parent
+    });
+    
+    customerSection.appendChild(customerCard);
+}
+
+addCustomerCard("Alice");
+addCustomerCard("Bob");
